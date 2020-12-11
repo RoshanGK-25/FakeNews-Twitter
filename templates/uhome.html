@@ -1,0 +1,103 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>SocialMiner</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+<link href="static/style.css" rel="stylesheet" type="text/css" />
+<script type="text/javascript" src="static/js/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="static/js/script.js"></script>
+<script type="text/javascript" src="static/js/cufon-yui.js"></script>
+<script type="text/javascript" src="static/js/arial.js"></script>
+<script type="text/javascript" src="static/js/cuf_run.js"></script>
+</head>
+<body>
+<div class="main">
+  <div class="main_resize">
+    <div class="header">
+      <div class="logo">
+        <h1><a href="#"><span>Social</span>Miner</a></h1>
+      </div>
+      <div class="search">
+        <!--/searchform -->
+<div class="clr">   
+</div>
+      </div>
+      <div class="clr"></div>
+      <div class="menu_nav">
+        <ul>
+         <li class="active"><a href="/">Home</a></li>
+         <!-- <li><a href="#">View Tweets</a></li>-->
+           <li><a href="/search_tweet">Search Tweets </a></li>
+          <li><a href="/viewbehv">View Fake </a></li>
+          <li><a href="/Logout">Logout</a></li>
+        </ul>
+        <div class="clr"></div>
+      </div>
+      <div class="hbg"><img src="static/images/banner1.jpg" width="923" height="291" alt="" /></div>
+    </div>
+    <div class="content">
+      <div class="content_bg">
+        <div class="mainbar">
+          <div class="article">
+            <h2> Welcome </h2>
+            <h3> Showing Twitter Timeline:</h3>
+
+            {% for tweet in data %} 
+                 <p>{{ tweet.user.name }} : {{ tweet.text }}</p>
+                   {% endfor %}
+            <div class="clr"></div>
+            
+            <div>
+              <p>
+               <h4>
+
+
+ </h4>
+              </p>
+            </div>
+            <p class="spec">&nbsp;</p>
+            <div class="clr"></div>
+          </div>
+          <div class="pagenavi"></div>
+        </div>
+        <div class="sidebar">
+          <div class="gadget">
+            <h2 class="star"><span>Sidebar</span> Menu</h2>
+            <div class="clr"></div>
+            <ul class="sb_menu">
+              <li class="active"><a href="/">Home</a></li>
+         <!-- <li><a href="#">View Tweets</a></li>-->
+           <li><a href="/search_tweet">Search Tweets </a></li>
+          <li><a href="/viewbehv">View Fake </a></li>
+          <li><a href="/Logout">Logout</a></li>
+            </ul>
+          </div>
+          <div class="gadget">
+            <h2 class="star"><span></span></h2>
+            <div class="clr"></div>
+            <div class="testi">
+              <p><span class="q"><img src="static/images/qoute_1.gif" width="20" height="15" alt="" /></span>The future belongs to social media .Social media is not about any country ,any language , any color,any community but it is about human values and that is the underline link binding humnity .<span class="q"><img src="static/images/qoute_2.gif" width="20" height="15" alt="" /></span></p>
+              <p class="title"><strong></strong></p>
+            </div>
+          </div>
+        </div>
+        <div class="clr"></div>
+      </div>
+    </div>
+  </div>
+  <div class="fbg">
+    <div class="fbg_resize">
+      <div class="clr"></div>
+    </div>
+  </div>
+</div>
+<div class="footer">
+  <div class="footer_resize">
+    <p class="lf">&copy; Copyright <a href="#">2019-20</a>.</p>
+    <p class="rf">Layout by  </p>
+    <div class="clr"></div>
+  </div>
+</div>
+<div align=center></div>
+</body>
+</html>
